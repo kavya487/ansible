@@ -1,0 +1,15 @@
+- name: play1
+  hosts: local
+  connection: local
+  tasks:
+  - name: multiplay and run
+    ansible.builtin.ping:
+     msg: "helo from play1 and task1"
+
+- name: play2
+  hosts: local
+  connection: local
+  tasks:
+  - name: multiplay and run
+    ansible.builtin.ping:
+     msg: "helo from play2 and task2"
