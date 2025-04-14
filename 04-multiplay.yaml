@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: multiplay and run
-    ansible.builtin.ping:
+    ansible.builtin.debug:
      msg: "helo from play1 and task1"
 
 - name: play2
@@ -11,5 +11,5 @@
   connection: local
   tasks:
   - name: multiplay and run
-    ansible.builtin.ping:
+    ansible.builtin.debug:
      msg: "helo from play2 and task2"
