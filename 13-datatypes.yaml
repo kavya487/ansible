@@ -2,4 +2,18 @@
   hosts: local
   connection: local
   vars:
-    G
+    course: devops with aws
+    duration: 1 hrs
+    topics:
+    - linux
+    - shell
+    - ansibleA
+    live: true
+    tools:
+      ci: jenkins
+      containers: docker
+      cloud: aws
+  tasks:
+  - name: print data 
+    ansible.builtin.debug:
+      msg: "course is {{ course }}, duration is {{ duration }}, topics are {{ topics }}, is it {{ live}}, tools cover are {{ tools }}"
