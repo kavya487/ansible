@@ -1,8 +1,8 @@
 - name: vars with prefer
   hosts: local
   connection: local
-  vars:
-    GREET: "Play"
+  # vars:
+  #   GREET: "Play"
   vars_files:
   - info.yaml
   # vars_prompt:
