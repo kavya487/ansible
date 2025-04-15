@@ -1,6 +1,4 @@
-- name: play1
-  hosts: local
-  connection: local
+c
   tasks:
   - name: multiplay and run
     ansible.builtin.debug:
