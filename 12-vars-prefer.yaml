@@ -5,10 +5,10 @@
     GREET: "Play"
   vars_files:
   - info.yaml
-  vars_prompt:
-  - name: GREET
-    prompt: Please enter your name
-    private: false
+  # vars_prompt:
+  # - name: GREET
+  #   prompt: Please enter your name
+  #   private: false
 
   tasks:
   - name: print prefernce
