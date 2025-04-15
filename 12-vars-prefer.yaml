@@ -3,8 +3,8 @@
   connection: local
   # vars:
   #   GREET: "Play"
-  vars_files:
-  - info.yaml
+  # vars_files:
+  # - info.yaml
   # vars_prompt:
   # - name: GREET
   #   prompt: Please enter your name
