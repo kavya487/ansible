@@ -4,6 +4,7 @@
   vars_prompt:
   - name: Name
     prompt: Please enter your name
+    private: false
   - name: Age
     prompt: Please enter your age
 
