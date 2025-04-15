@@ -5,7 +5,7 @@
   - name: Name
     prompt: Please enter your name
     private: false
-  - name: Ages
+  - name: Age
     prompt: Please enter your age
 
   tasks:
