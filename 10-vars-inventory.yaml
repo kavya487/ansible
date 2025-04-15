@@ -3,4 +3,4 @@
   tasks:
   - name: print the inventory
     ansible.builtin.debug:
-      msg: "course is {{ course}}, Trainer is {{ Trainer }}, Duration is {{ Duration }}"
+      msg: "course is {{ Course}}, Trainer is {{ Trainer }}, Duration is {{ Duration }}"
