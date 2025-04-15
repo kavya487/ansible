@@ -1,5 +1,5 @@
 - name: variables
-  hosts: web
+  hosts: 
   # connection: local
   tasks:
   - name: variables define
