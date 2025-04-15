@@ -5,7 +5,7 @@
   - name: Name
     prompt: Please enter your name
   - name: Age
-    Prompt: Please enter your age
+    prompt: Please enter your age
 
   tasks:
   - name: print vars with prompt
