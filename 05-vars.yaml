@@ -4,4 +4,4 @@
   tasks:
   - name: variables define
     ansible.builtin.debug:
-    msg: "course is devops with aws"
+      msg: "course is devops with aws"
