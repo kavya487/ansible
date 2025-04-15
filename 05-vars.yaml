@@ -1,6 +1,6 @@
 - name: variables
-  hosts:  web
-  # connection: local
+  hosts:  local
+  connection: local
   tasks:
   - name: variables define
     ansible.builtin.debug:
