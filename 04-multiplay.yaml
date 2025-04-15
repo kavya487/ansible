@@ -1,4 +1,4 @@
-c
+
   tasks:
   - name: multiplay and run
     ansible.builtin.debug:

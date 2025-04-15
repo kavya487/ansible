@@ -1,0 +1,17 @@
+- name: vars with prefer
+  hosts: local
+  connection: local
+  vars:
+   Greet: play
+  vars_files:
+  - info.yaml
+  vars_prompt:
+  - name: Greet
+    prompt: please enter the value greet
+    private: false
+  tasks:
+  - name: vars with prefer
+    vars:
+      Greet: task level
+    ansible.builtin.debug:
+      msg: "hello from {{ Greet }}"
