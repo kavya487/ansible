@@ -1,0 +1,9 @@
+- name: vars with prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - info.yaml
+  tasks:
+  - name: print vars with prompt
+    ansible.builtin.debug:
+      msg: "my name is {{ Name}}, and age is {{ Age }}"
