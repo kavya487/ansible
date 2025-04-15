@@ -1,0 +1,5 @@
+- name: data types with ansible
+  hosts: local
+  connection: local
+  vars:
+    G
