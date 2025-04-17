@@ -5,3 +5,9 @@
   - name: check the filters
     ansible.builtin.debug:
       msg: " Hello {{ name | default ('Ramesh') }}"
+
+  - name: check the list
+    vars:
+      fruits: "apple,banana, orange"
+    ansible.builtin.debug:
+    msg: " fruits are {{ fruits | split(,) }}"
