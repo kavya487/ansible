@@ -5,12 +5,12 @@
   - name: install and run nginx
     ansible.builtin.debug:
       name: nginx
-      state: present
+      state: installed
     when: ansible_os_family == "RedHat"
 
 
   - name: install debian  
     ansible.builtin.apt:
       name: debian
-      state: present
+      state: installed
     when: ansible_os_family == "Debian"
