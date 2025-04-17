@@ -1,0 +1,12 @@
+- name: print loops
+  hosts: web
+  become: yes
+  tasks:
+  - name: install servers
+    ansible.builtin.package:
+  - name: "{{ item }}"
+    state: installed
+    loop:
+    - mysql
+    - git
+    - gcc
