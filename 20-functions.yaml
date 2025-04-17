@@ -45,3 +45,9 @@
       numbers: [98,21,1,100]
     ansible.builtin.debug:
       msg: "check the {{ numbers | max }}"
+
+  - name: check ip address
+    vars:
+      ip: 23.75.234.273
+    ansible.builtin.debug:
+      msg: " {{ ip | ansible.utils.ipaddr }}"
