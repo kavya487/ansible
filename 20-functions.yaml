@@ -39,3 +39,9 @@
       numbers: [1,89,54,32,100]
     ansible.builtin.debug:
       msg: "check the {{ numbers | min }}"
+
+  - name: select the max
+    vars:
+      numbers: [98,21,1,100]
+    ansible.builtin.debug:
+      msg: "check the {{ numbers | max }}"
