@@ -33,3 +33,9 @@
       name: kavya kummitha
     ansible.builtin.debug:
       msg: " Hello {{ name | upper }}"
+
+  - name: select the min
+    vars:
+      numbers: [1,89,54,32,100]
+    ansible.builtin.debug:
+      msg: "check the {{ numbers | min }}"
